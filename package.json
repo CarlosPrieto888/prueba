@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start":"cd backend && node app.js",
-    "build": "cd backend && npm install && cd ../fronend && npm install && npm run build && rm -rf node_modules",
+    "build": "cd backend && npm install && cd ../frontend && npm install && npm run build && rm -rf node_modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
