@@ -12,10 +12,10 @@ app.use("/api/usuario", require("./routes/usuario"));
 app.use("/api/peliculas", require("./routes/peliculas"));
 app.use("/api/series", require("./routes/series"));
 
-if (process.env.NODE_ENV === "production ") {
-    app.use(express.static ("../ frontend/build "));
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static ("../frontend/build"));
     app.get("*", (req , res) => {
-    res.sendFile(path.resolve(__dirname , "../ frontend", "build", "index.html"));
+    res.sendFile(path.resolve(__dirname , "../frontend", "build", "index.html"));
     });
 }
 
